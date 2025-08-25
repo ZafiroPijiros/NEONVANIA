@@ -4,8 +4,9 @@ export class MenuScene {
     const ui = this.engine.ui;
     ui.innerHTML = `
       <div style="text-align:center; padding:20px; color:#cfe7ff;">
-        <h1>🌌 NEONVANIA</h1>
-        <p>Metroidvania + Lucha + RPG + Bullet Time</p>
+        <h1>🌌 NEONVANIA v2</h1>
+        <p>Jugador avanzado: doble salto, dash, ataque y HUD</p>
+        <p>Controles: A/D moverse · Space saltar · Shift dash · J ataque · M menú</p>
         <button id="playBtn">▶ Jugar</button>
       </div>
     `;
