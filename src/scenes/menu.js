@@ -2,15 +2,25 @@ export class MenuScene {
   constructor(engine){ this.engine=engine; }
   start(){
     const ui = this.engine.ui;
+    const save = localStorage.getItem("neonvania_save");
+    const hasSave = !!save;
     ui.innerHTML = `
-      <div style="text-align:center; padding:20px; color:#cfe7ff;">
-        <h1>🌌 NEONVANIA v4</h1>
-        <p>Bullet time · Parry · Armas (energía y munición) · Loot · Mini-jefe</p>
-        <p>Controles: A/D moverse · Space doble salto · Shift bullet time (tap = dash) · J ataque · K disparo · L parry · 1/2 armas · M menú</p>
-        <button id="playBtn">▶ Jugar</button>
+      <div class="panel" style="text-align:center; color:#cfe7ff;">
+        <h1>🌌 NEONVANIA v6</h1>
+        <p>Checkpoints · Portales · Quests · Mapa del mundo · Opciones de audio · + todo lo anterior</p>
+        <p>Controles: A/D mover · Space doble salto · Shift BT (tap = dash) · J melee · K disparo · L parry · 1/2 armas · E cofre · Q quest · O opciones · M menú</p>
+        <div>
+          <button id="newBtn">▶ Nueva partida</button>
+          ${hasSave ? '<button id="loadBtn">⏎ Cargar</button>' : ''}
+          ${hasSave ? '<button id="delBtn">🗑 Borrar guardado</button>' : ''}
+        </div>
       </div>
     `;
-    document.getElementById("playBtn").onclick = () => this.engine.start("level1");
+    document.getElementById("newBtn").onclick = () => this.engine.start("level1", { load:false });
+    if (hasSave) {
+      document.getElementById("loadBtn").onclick = () => this.engine.start("level1", { load:true });
+      document.getElementById("delBtn").onclick = () => { localStorage.removeItem("neonvania_save"); this.start(); };
+    }
   }
   update(){}
   draw(ctx){

@@ -3,14 +3,14 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>NEONVANIA — v4</title>
+  <title>NEONVANIA — v6</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <canvas id="game" tabindex="0"></canvas>
   <div id="ui"></div>
 
-  <!-- Limpieza opcional de service workers para evitar cachés antiguas -->
+  <!-- Limpieza de Service Workers anteriores -->
   <script>
     if ('serviceWorker' in navigator) {
       navigator.serviceWorker.getRegistrations().then(rs => rs.forEach(r => r.unregister()));

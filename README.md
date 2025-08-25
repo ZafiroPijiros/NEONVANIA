@@ -1,12 +1,8 @@
-# NEONVANIA v4
-- **Bullet time** (Shift mantenido) y **dash** (Shift tap).
-- **Parry** (L) con ventana corta; refleja disparos del boss y contraataca contacto.
-- **Sistema de armas**: Pistola EN (infinita con coste de energía) y Bolter (munición).
-- **Proyectiles del jugador** (K), **ataque melee** (J).
-- **Loot & drops**: vida, BT, energía, munición y arma (rara).
-- **Mini-jefe** en sala 4 con barra propia y patrones.
+# NEONVANIA v6
+**Novedades**: Checkpoints/Respawn, Portales, Sistema de Quests, Minimap/Mapa del mundo, Panel de Opciones (sonido), decoración de tiles y SFX básicos.
+Controles: A/D, Space, Shift (BT/dash), J melee, K disparo, L parry, 1/2 armas, E cofre, Q quest, O opciones, M menú.
 
-## Estructura
+Estructura:
 ```
 index.html
 styles.css

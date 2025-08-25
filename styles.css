@@ -1,5 +1,9 @@
 html,body{height:100%;margin:0;background:#0a0b14;color:#cfe7ff;font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto}
 #game{display:block;width:100vw;height:100vh;outline:none}
 #ui{position:fixed;left:0;top:0;right:0;padding:8px;pointer-events:auto}
-#ui button{background:#111a3a;color:#cfe7ff;border:1px solid #3254ff;border-radius:10px;padding:10px 16px;cursor:pointer}
-#ui h1{margin:8px 0 12px 0}
+.panel{background:#0c1330;border:1px solid #2b3b8f;border-radius:12px;padding:10px;max-width:560px;margin:8px auto;box-shadow:0 6px 24px rgba(0,0,0,.35)}
+button{background:#111a3a;color:#cfe7ff;border:1px solid #3254ff;border-radius:10px;padding:10px 16px;cursor:pointer;margin:4px}
+.badge{display:inline-block;padding:2px 6px;border-radius:8px;border:1px solid #3c4cff;margin-left:6px}
+.slider{width:160px}
+.row{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+kbd{background:#111a3a;border:1px solid #3254ff;border-radius:6px;padding:2px 6px}
