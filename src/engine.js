@@ -6,6 +6,7 @@ export class Engine {
     this.keys = {};
     this.scenes = new Map();
     this.current = null;
+    this.timeScale = 1; // para bullet time
 
     // Resize
     this.dpr = Math.max(1, Math.min(2, window.devicePixelRatio || 1));
@@ -23,7 +24,7 @@ export class Engine {
 
     // Input
     window.addEventListener('keydown', (e) => {
-      if (e.code === 'Space') e.preventDefault();
+      if (e.code === 'Space' || e.code === 'Tab') e.preventDefault();
       this.keys[e.code] = true;
     });
     window.addEventListener('keyup', (e) => {
@@ -34,10 +35,12 @@ export class Engine {
     this.last = 0;
     const step = (ts) => {
       if (!this.last) this.last = ts;
-      let dt = (ts - this.last) / 1000;
-      if (dt > 0.05) dt = 0.05;
+      let rawDt = (ts - this.last) / 1000;
+      if (rawDt > 0.05) rawDt = 0.05;
       this.last = ts;
-      if (this.current?.update) this.current.update(dt);
+
+      const scaledDt = rawDt * this.timeScale;
+      if (this.current?.update) this.current.update(scaledDt, rawDt);
       if (this.current?.draw) this.current.draw(this.ctx);
       requestAnimationFrame(step);
     };

@@ -1,5 +1,10 @@
-# NEONVANIA v2
-Jugador avanzado con doble salto, dash, ataque melee y HUD. Listo para GitHub Pages.
+# NEONVANIA v4
+- **Bullet time** (Shift mantenido) y **dash** (Shift tap).
+- **Parry** (L) con ventana corta; refleja disparos del boss y contraataca contacto.
+- **Sistema de armas**: Pistola EN (infinita con coste de energía) y Bolter (munición).
+- **Proyectiles del jugador** (K), **ataque melee** (J).
+- **Loot & drops**: vida, BT, energía, munición y arma (rara).
+- **Mini-jefe** en sala 4 con barra propia y patrones.
 
 ## Estructura
 ```
