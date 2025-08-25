@@ -1,52 +1,85 @@
-# NEONVANIA — Vertical Slice (Starter)
+# 🌌 NEONVANIA
 
-Este es un **prototipo jugable** de un metroidvania con mecánicas de lucha y un toque RPG + *tiempo bala*. Está diseñado como **punto de partida** para evolucionar a un juego completo (Steam-ready).
+Un **Metroidvania futurista** con mecánicas avanzadas de combate, exploración y rol.  
+Inspirado en clásicos arcade y juegos de lucha, con un toque de *tiempo bala* para darle un sabor único.  
 
-## Controles
-- Mover: **A/D** o **←/→**
-- Saltar (doble salto y salto en pared): **Space / W / ↑ / Tap**
-- Dash: **Shift**
-- Atacar (melee / combo): **J**
-- Disparo (rango): **K**
-- Pausa: **P**
-- Bullet time: **mantener Shift** o mantener toque
-
-## Características incluidas
-- Movimiento avanzado (doble salto, *wall slide*, *dash* aéreo, *air control*)
-- Combate cuerpo a cuerpo con *combo window*
-- Proyectiles básicos
-- Enemigos “grunt” con patrulla/acecho simple
-- XP, nivel y puntos de habilidad (persistencia local)
-- *Bullet time* con barra de energía
-- Mapa por tiles + colisiones
-- Cámara con seguimiento
-- HUD básico
-- Arquitectura de **escenas** y pequeño “engine” listo para crecer
-
-## Estructura
-```
-index.html
-styles.css
-src/
-  engine.js     # bucle, input, audio, helpers, física básica
-  game.js       # registro y arranque de escenas
-  scenes/
-    menu.js
-    level1.js   # vertical slice jugable
-assets/
-  (espacio para sprites/sonidos más adelante)
-```
-
-## Siguientes pasos sugeridos
-1. **Arte & audio**: sustituir rectángulos por sprites animados (idle, run, jump, attack, hit, death).
-2. **Combate profundo**: *launchers*, antiaéreos, *air dashes*, cancelaciones, *parry* y *perfect dodge* con cámara *hit stop*.
-3. **RPG real**: árbol de habilidades (dash mejorado, triple salto, hook), armas con estadísticas, *loot tables*, *crafting* ligero.
-4. **IA variada**: *patroller*, *shooter*, *bomber*, *shield*, mini-jefes con patrones.
-5. **Mundo**: gestor de salas/zonas, backtracking con habilidades, *save points* y *fast travel*.
-6. **Herramientas**: loader de *tilemaps* (Tiled), editor de datos en JSON, sistema de *triggers* y *cutscenes*.
-7. **Efectos**: partículas, *hit sparks*, *screen shake*, *chromatic aberration*, shaders (WebGL o Canvas comp).
-8. **Steam**: empaquetado con Electron/Tauri, *input remapping*, *fullscreen*, *achievements* via Steamworks.
+![Banner](https://user-images.githubusercontent.com/0000000/placeholder.png)  
+*(Reemplaza esta imagen con un screenshot de tu juego)*
 
 ---
 
-> Este proyecto es libre para que lo modifiques. Si quieres, puedo continuar y convertir este vertical slice en un **proyecto completo**, con *tilemaps* reales, *tooling* y export a escritorio.
+## 🎮 Controles
+
+| Acción              | Tecla PC       | Móvil (touch)       |
+|---------------------|----------------|----------------------|
+| Moverse             | ← / → / A / D  | D-Pad virtual        |
+| Saltar              | Space / W / ↑  | Tap en botón salto   |
+| Doble salto         | Saltar en el aire | -                 |
+| Dash                | Shift          | Swipe                |
+| Tiempo Bala         | Mantener Shift | Long press           |
+| Ataque melee        | J              | Botón ataque         |
+| Disparo             | K              | Botón disparo        |
+| Pausa               | P              | -                    |
+
+---
+
+## ⚔️ Características
+
+- 🌀 **Movimiento avanzado**: doble salto, wall slide, dash aéreo.  
+- ⚡ **Combate arcade**: combos, disparos, parries, i-frames.  
+- 🛡️ **Power-ups**: escudo, bullet time con barra de energía.  
+- 💾 **Progresión RPG**: XP, niveles, puntos de habilidad.  
+- 👾 **IA enemiga**: patrullaje, persecución, botín de orbes.  
+- 🎨 **Estilo neón retro-futurista** en canvas 2D.  
+- 🎶 **SFX dinámicos** generados en WebAudio (placeholder listos para reemplazo).  
+
+---
+
+## 🚀 Cómo jugar
+
+👉 Juega directamente en GitHub Pages:  
+[**🔗 NEONVANIA (Web Demo)**](https://TU-USUARIO.github.io/NEONVANIA/)
+
+---
+
+## 🛠️ Tecnologías
+
+- **JavaScript (Canvas 2D)** para la lógica y gráficos.  
+- **WebAudio API** para efectos de sonido.  
+- **LocalStorage** para guardar progreso y récords.  
+- **Arquitectura modular** (`src/engine.js`, `scenes/`, `entities/`) lista para escalar.  
+
+---
+
+## 📦 Roadmap
+
+- [x] Movimiento básico y combate  
+- [x] Tiempo bala + HUD  
+- [x] Sistema de niveles y XP  
+- [ ] Árbol de habilidades  
+- [ ] Mapa conectado estilo Metroidvania  
+- [ ] Jefes con patrones avanzados  
+- [ ] Arte y música definitivos  
+- [ ] Publicación en Steam  
+
+---
+
+## 📸 Screenshots
+
+*(Agrega aquí capturas del juego una vez tengas más arte o niveles)*
+
+---
+
+## 👤 Autor
+
+Creado por [**TU NOMBRE / ALIAS**](https://github.com/TU-USUARIO)  
+Con el apoyo de la comunidad ✨  
+
+---
+
+## 🏆 Objetivo
+
+Este proyecto busca evolucionar hasta convertirse en un juego comercial de calidad,  
+listo para ser publicado en **Steam** y participar en **jams y competiciones indie**.  
+
+---
